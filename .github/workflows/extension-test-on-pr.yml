@@ -21,7 +21,7 @@ on:
         required: true
       GO_VERSION: 
         required: true
-      GH_ACCESS_TOKEN: 
+      ORG_REPO_TOKEN: 
         required: true
       CYPRESS_RECORD_KEY:
         required: true
@@ -33,7 +33,7 @@ jobs:
       - name: comment starting point
         uses: hasura/comment-progress@v2.1.0
         with:
-          github-token: ${{ secrets.GH_ACCESS_TOKEN }}
+          github-token: ${{ secrets.ORG_REPO_TOKEN }}
           repository: 'khulnasoftlabs/meshplay-extensions'
           number: ${{ inputs.pr_number }}
           id: extension-test
@@ -51,7 +51,7 @@ jobs:
       - name: comment progress
         uses: hasura/comment-progress@v2.1.0
         with:
-          github-token: ${{ secrets.GH_ACCESS_TOKEN }}
+          github-token: ${{ secrets.ORG_REPO_TOKEN }}
           repository: 'khulnasoftlabs/meshplay-extensions'
           number: ${{ inputs.pr_number }}
           id: extension-test
@@ -67,7 +67,7 @@ jobs:
           path: ./meshplay-extensions
           fetch-depth: 1
           ref: ${{ inputs.branch_name }}
-          token: ${{ secrets.GH_ACCESS_TOKEN }}
+          token: ${{ secrets.ORG_REPO_TOKEN }}
       - name: Setup go
         uses: actions/setup-go@v4
         with:
@@ -94,7 +94,7 @@ jobs:
       - name: comment progress
         uses: hasura/comment-progress@v2.1.0
         with:
-          github-token: ${{ secrets.GH_ACCESS_TOKEN }}
+          github-token: ${{ secrets.ORG_REPO_TOKEN }}
           repository: 'khulnasoftlabs/meshplay-extensions'
           number: ${{ inputs.pr_number }}
           id: extension-test
@@ -104,7 +104,7 @@ jobs:
         if: failure()
         uses: hasura/comment-progress@v2.1.0
         with:
-          github-token: ${{ secrets.GH_ACCESS_TOKEN }}
+          github-token: ${{ secrets.ORG_REPO_TOKEN }}
           repository: 'khulnasoftlabs/meshplay-extensions'
           number: ${{ inputs.pr_number }}
           id: extension-test
@@ -118,7 +118,7 @@ jobs:
       - name: comment progress start
         uses: hasura/comment-progress@v2.1.0
         with:
-          github-token: ${{ secrets.GH_ACCESS_TOKEN }}
+          github-token: ${{ secrets.ORG_REPO_TOKEN }}
           repository: 'khulnasoftlabs/meshplay-extensions'
           number: ${{ inputs.pr_number }}
           id: extension-test
@@ -214,7 +214,7 @@ jobs:
       - name: comment progress start
         uses: hasura/comment-progress@v2.1.0
         with:
-          github-token: ${{ secrets.GH_ACCESS_TOKEN }}
+          github-token: ${{ secrets.ORG_REPO_TOKEN }}
           repository: 'khulnasoftlabs/meshplay-extensions'
           number: ${{ inputs.pr_number }}
           id: extension-test
@@ -277,7 +277,7 @@ jobs:
         if: ${{ success() || steps.runTest.outcome == 'success' || steps.retryTest.outcome == 'success' || steps.retryTest2.outcome == 'success' }}
         uses: hasura/comment-progress@v2.1.0
         with:
-          github-token: ${{ secrets.GH_ACCESS_TOKEN }}
+          github-token: ${{ secrets.ORG_REPO_TOKEN }}
           repository: 'khulnasoftlabs/meshplay-extensions'
           number: ${{ inputs.pr_number }}
           id: extension-test
@@ -305,7 +305,7 @@ jobs:
         if: always()
         with: 
           message:  ${{join(steps.cypress_summary.outputs.*, '\n')}}
-          github-token: ${{ secrets.GH_ACCESS_TOKEN }}
+          github-token: ${{ secrets.ORG_REPO_TOKEN }}
           repository: 'khulnasoftlabs/meshplay-extensions'
           number: ${{ inputs.pr_number }}
           id: extension-test
@@ -326,7 +326,7 @@ jobs:
         uses: hasura/comment-progress@v2.1.0
         if: ${{ failure() && steps.retryTest2.outcome == 'failure' }}
         with:
-          github-token: ${{ secrets.GH_ACCESS_TOKEN }}
+          github-token: ${{ secrets.ORG_REPO_TOKEN }}
           repository: 'khulnasoftlabs/meshplay-extensions'
           number: ${{ inputs.pr_number }}
           id: extension-test
@@ -336,7 +336,7 @@ jobs:
         if: always()
         uses: hasura/comment-progress@v2.1.0
         with:
-          github-token: ${{ secrets.GH_ACCESS_TOKEN }}
+          github-token: ${{ secrets.ORG_REPO_TOKEN }}
           repository: 'khulnasoftlabs/meshplay-extensions'
           number: ${{ inputs.pr_number }}
           id: extension-test

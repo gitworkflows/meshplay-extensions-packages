@@ -12,7 +12,7 @@ jobs:
       PROVIDER_TOKEN: ${{ secrets.PROVIDER_TOKEN }}
       NODE_VERSION: ${{ secrets.NODE_VERSION }}
       GO_VERSION: ${{ secrets.GO_VERSION }}
-      GH_ACCESS_TOKEN: ${{ secrets.GH_ACCESS_TOKEN }}
+      ORG_REPO_TOKEN: ${{ secrets.ORG_REPO_TOKEN }}
       CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
   meshplay-cloud-deploy:
     if: github.event.action == 'meshplay-cloud-deploy'
@@ -21,7 +21,7 @@ jobs:
       release-environment: ${{ github.event.client_payload.release_environment }}
       release-version: ${{ github.event.client_payload.release_version}} 
     secrets: 
-      GH_ACCESS_TOKEN: ${{ secrets.GH_ACCESS_TOKEN }}
+      ORG_REPO_TOKEN: ${{ secrets.ORG_REPO_TOKEN }}
       MESHPLAY_CLOUD_AWS_PROD_HOST: ${{ secrets.MESHPLAY_CLOUD_AWS_PROD_HOST }}
       MESHPLAY_CLOUD_AWS_PROD_USERNAME: ${{ secrets.MESHPLAY_CLOUD_AWS_PROD_USERNAME }}
       MESHPLAY_CLOUD_AWS_PROD_KEY: ${{ secrets.MESHPLAY_CLOUD_AWS_PROD_KEY }}
