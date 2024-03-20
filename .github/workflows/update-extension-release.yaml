@@ -10,7 +10,7 @@ jobs:
       - uses: actions/checkout@v4
         # token here with write access to meshplay-istio repo
         with:
-          token: ${{ secrets.GH_ACCESS_TOKEN }}
+          token: ${{ secrets.ORG_REPO_TOKEN }}
           ref: 'master'
           repository: 'khulnasoftlabs/meshplay-extensions'
       - name: Update extensions_releases.json
