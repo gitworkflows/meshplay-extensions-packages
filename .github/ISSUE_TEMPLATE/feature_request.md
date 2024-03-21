@@ -21,4 +21,4 @@ assignees: ''
 <!-- [Optional] Any visual diagrams of the desired user interface. -->
 
 ---
-**[Contributor Guide](https://docs.meshplay.io/project/contributing)**
+**[Contributor Guide](https://docs.meshplay.khulnasoft.com/project/contributing)**

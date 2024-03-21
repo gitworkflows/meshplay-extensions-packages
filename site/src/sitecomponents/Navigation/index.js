@@ -151,7 +151,7 @@ function Navigation({ theme, toggleTheme, showSignUpButton, logo }) {
                 <a
                   rel="noreferrer"
                   className="drop-item"
-                  href="https://playground.meshplay.io"
+                  href="https://playground.meshplay.khulnasoft.com"
                   target="_blank"
                 >
                   <div className="drop-item-icon">
@@ -196,7 +196,7 @@ function Navigation({ theme, toggleTheme, showSignUpButton, logo }) {
             >
               Login
             </a>
-            {/* <a href="https://demo.meshplay.io" className="login-btn" role="button">Login</a> */}
+            {/* <a href="https://demo.meshplay.khulnasoft.com" className="login-btn" role="button">Login</a> */}
           </div>
         )}
       </div>

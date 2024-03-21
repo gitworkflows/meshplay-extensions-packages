@@ -18,6 +18,6 @@ assignees: ''
 <!-- Stipulations of functional behavior or non-functional items that must be in-place in order for the issue to be closed. -->
 
 ---
-#### Contributor [Guides](https://docs.meshplay.io/project/contributing) and Resources
-- 🛠 [Meshplay Build & Release Strategy](https://docs.meshplay.io/project/build-and-release)
-- 🙋🏾🙋🏼 Questions: [Discussion Forum](http://discuss.meshplay.io) and [Community Slack](https://slack.meshplay.io)
+#### Contributor [Guides](https://docs.meshplay.khulnasoft.com/project/contributing) and Resources
+- 🛠 [Meshplay Build & Release Strategy](https://docs.meshplay.khulnasoft.com/project/build-and-release)
+- 🙋🏾🙋🏼 Questions: [Discussion Forum](http://discuss.meshplay.khulnasoft.com) and [Community Slack](https://slack.meshplay.khulnasoft.com)

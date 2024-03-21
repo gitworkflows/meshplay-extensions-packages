@@ -144,7 +144,7 @@
             "slug": "meshplay-catalog",
             "imageSource": "assets/badges/meshplay-catalog/meshplay-catalog.png",
             "title": "Meshplay Catalog",
-            "description": "This badge is awarded to the community members who make consistent and impactful contributions to the <a href='https://meshplay.io/catalog'>Meshplay Catalog</a> of Meshplay project in recognition and appreciation of their efforts."
+            "description": "This badge is awarded to the community members who make consistent and impactful contributions to the <a href='https://meshplay.khulnasoft.com/catalog'>Meshplay Catalog</a> of Meshplay project in recognition and appreciation of their efforts."
         },
         {
             "slug": "docker-extension",
@@ -156,7 +156,7 @@
             "slug": "meshplay-docs",
             "imageSource": "assets/badges/meshplay-docs/meshplay-docs.png",
             "title": "Meshplay Docs",
-            "description": "This badge is awarded to the community members who make consistent and impactful contributions to the <a href='https://docs.meshplay.io'>Meshplay Docs</a> in recognition and appreciation of their efforts."
+            "description": "This badge is awarded to the community members who make consistent and impactful contributions to the <a href='https://docs.meshplay.khulnasoft.com'>Meshplay Docs</a> in recognition and appreciation of their efforts."
         },
         {
             "slug": "meshsync",

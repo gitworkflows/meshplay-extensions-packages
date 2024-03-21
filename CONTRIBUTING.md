@@ -3,7 +3,7 @@ Please do! Thanks for your help improving the project! :balloon:
 
 All contributors are welcome. Please see the [newcomers welcome guide](https://khulnasoft.com/community/newcomers) for how, where and why to contribute. This project is community-built and welcomes collaboration. Contributors are expected to adhere to our [Code of Conduct](.CODE_OF_CONDUCT.md).
 
-Not sure where to start? First, see the [newcomers welcome guide](https://khulnasoft.com/community/newcomers). Grab an open issue with the [help-wanted label](../../labels/help%20wanted) and jump in. Join the [Slack account](https://slack.meshplay.io) and engage in conversation. Create a [new issue](/../../issues/new/choose) if needed.  All [pull requests](/../../pulls) should reference an open [issue](/../../issues). Include keywords in your pull request descriptions, as well as commit messages, to [automatically close issues in GitHub](https://help.github.com/en/github/managing-your-work-on-github/closing-issues-using-keywords).
+Not sure where to start? First, see the [newcomers welcome guide](https://khulnasoft.com/community/newcomers). Grab an open issue with the [help-wanted label](../../labels/help%20wanted) and jump in. Join the [Slack account](https://slack.meshplay.khulnasoft.com) and engage in conversation. Create a [new issue](/../../issues/new/choose) if needed.  All [pull requests](/../../pulls) should reference an open [issue](/../../issues). Include keywords in your pull request descriptions, as well as commit messages, to [automatically close issues in GitHub](https://help.github.com/en/github/managing-your-work-on-github/closing-issues-using-keywords).
 
 **Sections**
 - <a name="contributing">General Contribution Flow</a>
@@ -66,7 +66,7 @@ We welcome everyone to review Pull Requests. It is a great way to learn, network
 - Do not blindly approve Pull Requests to improve your GitHub contributors graph
 
 ## Style Guide
-The play.meshplay.io site is built using ReactJS.
+The play.meshplay.khulnasoft.com site is built using ReactJS.
 
 ## Working with themes
 A custom React hook [useDarkMode.js](./site/src/components/useDarkMode.js) has been used to provide dark theme functionality to the website. The theme can be passed as props to the component where the functionality is desired.
@@ -132,7 +132,7 @@ cd play
 **4.** Add a reference(remote) to the original repository.
 
 ```
-git remote add upstream https://github.com/meshplay/play.git
+git remote add upstream https://github.com/khulnasoft/play.git
 ```
 
 **5.** Check the remotes for this repository.
@@ -147,7 +147,7 @@ git remote -v
 git pull upstream master
 ```
 
-**7.** Create a new branch. Follow [this](https://docs.meshplay.io/project/contributing/contributing-gitflow#create-a-new-branch-give-your-branch-its-own-simple-informative-name) guideline when naming your branches.
+**7.** Create a new branch. Follow [this](https://docs.meshplay.khulnasoft.com/project/contributing/contributing-gitflow#create-a-new-branch-give-your-branch-its-own-simple-informative-name) guideline when naming your branches.
 
 ```
 git checkout -b <your_branch_name>
@@ -247,7 +247,7 @@ Or you may configure your IDE, for example, Visual Studio Code to automatically 
 <a href="https://user-images.githubusercontent.com/7570704/64490167-98906400-d25a-11e9-8b8a-5f465b854d49.png" ><img src="https://user-images.githubusercontent.com/7570704/64490167-98906400-d25a-11e9-8b8a-5f465b854d49.png" width="50%"><a>
 
 ## <a name="contributing-docs">Documentation Contribution Flow</a>
-Please contribute! Meshplay documentation uses Jekyll and GitHub Pages to host docs sites. Learn more about [Meshplay's documentation framework](https://docs.meshplay.io/project/contributing). The process of contributing follows this flow:
+Please contribute! Meshplay documentation uses Jekyll and GitHub Pages to host docs sites. Learn more about [Meshplay's documentation framework](https://docs.meshplay.khulnasoft.com/project/contributing). The process of contributing follows this flow:
 
 1. Create a fork, if you have not already, by following the steps described [here](./CONTRIBUTING-gitflow.md)
 1. In the local copy of your fork, navigate to the docs folder.
