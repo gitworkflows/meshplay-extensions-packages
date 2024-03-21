@@ -106,7 +106,7 @@ jobs:
           mv cypress/cypress ui/
           mv cypress/cypress.config.js ui/cypress.config.js
       - name: Cypress run
-        uses: cypress-io/github-action@v4
+        uses: cypress-io/github-action@v6
         with:
           working-directory: ui
           spec: cypress/e2e/e2e/**/*

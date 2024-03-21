@@ -222,7 +222,7 @@ jobs:
           append: true
       - name: Cypress run
         id: runTest
-        uses: cypress-io/github-action@v4
+        uses: cypress-io/github-action@v6
         with:
           working-directory: ui
           spec: cypress/e2e/e2e/**/*
@@ -239,7 +239,7 @@ jobs:
       - name: retry Cypress
         if: failure()
         id: retryTest
-        uses: cypress-io/github-action@v4
+        uses: cypress-io/github-action@v6
         with:
           working-directory: ui
           spec: cypress/e2e/e2e/**/*
@@ -256,7 +256,7 @@ jobs:
       - name: retry Cypress 2nd Time
         if: ${{ failure() && steps.retryTest.outcome == 'failure'}}
         id: retryTest2
-        uses: cypress-io/github-action@v4
+        uses: cypress-io/github-action@v6
         with:
           working-directory: ui
           spec: cypress/e2e/e2e/**/*
