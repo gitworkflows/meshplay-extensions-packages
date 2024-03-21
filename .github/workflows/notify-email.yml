@@ -30,10 +30,10 @@ jobs:
     steps:
       - name: grab release notes
         run: |
-          curl https://raw.githubusercontent.com/meshplay/meshplay/master/docs/_releases/${{inputs.release-tag}}.md | sed -e '1,5d' > meshplay-release-notification.html
+          curl https://raw.githubusercontent.com/khulnasoft/meshplay/master/docs/_releases/${{inputs.release-tag}}.md | sed -e '1,5d' > meshplay-release-notification.html
           echo "|
           
-          ## 🛝 Access ${{inputs.release-tag}} in the [Meshplay Playground](https://playground.meshplay.io) 
+          ## 🛝 Access ${{inputs.release-tag}} in the [Meshplay Playground](https://playground.meshplay.khulnasoft.com) 
           " >> meshplay-release-notification.html
       - name: Send email
         uses: dawidd6/action-send-mail@v3.7.1
@@ -52,12 +52,12 @@ jobs:
           to: ${{inputs.to}}
           # Required sender full name (address can be skipped):
           from: |
-            "Meshplay Releaser" <no-reply@meshplay.io>
+            "Meshplay Releaser" <no-reply@meshplay.khulnasoft.com>
           # Optional whether this connection use TLS (default is true if server_port is 465)
           secure: true
           # Optional plain body:
           body: |
-            New Release: Meshplay ${{inputs.release-tag}}. Find details at https://docs.meshplay.io/project/releases/${{inputs.release-tag}}
+            New Release: Meshplay ${{inputs.release-tag}}. Find details at https://docs.meshplay.khulnasoft.com/project/releases/${{inputs.release-tag}}
           # Optional HTML body read from file:
           html_body: file://meshplay-release-notification.html
           # Optional carbon copy recipients:
@@ -65,7 +65,7 @@ jobs:
           # Optional blind carbon copy  recipients:
           # bcc: r2d2@example.com,hansolo@example.com
           # Optional recipient of the email response:
-          reply_to: no-reply@meshplay.io
+          reply_to: no-reply@meshplay.khulnasoft.com
           # Optional unsigned/invalid certificates allowance:
           ignore_cert: true
           # Optional converting Markdown to HTML (set content_type to text/html too):

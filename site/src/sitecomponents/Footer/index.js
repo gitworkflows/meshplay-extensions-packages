@@ -57,12 +57,12 @@ const Footer = () => {
           </h3>
           <ul className="section-categories">
             <li>
-              <a className="category-link" href="https://docs.meshplay.io/">
+              <a className="category-link" href="https://docs.meshplay.khulnasoft.com/">
                 Docs
               </a>
             </li>
             <li>
-              <a className="category-link" href="https://meshplay.io/features">
+              <a className="category-link" href="https://meshplay.khulnasoft.com/features">
                 Features
               </a>
             </li>
@@ -77,7 +77,7 @@ const Footer = () => {
             <li>
               <a
                 className="category-link"
-                href="https://meshplay.io/#getting-started"
+                href="https://meshplay.khulnasoft.com/#getting-started"
               >
                 Run Meshplay
               </a>
@@ -94,7 +94,7 @@ const Footer = () => {
         </div>
         <div className="footer-links community">
           <h3 className="section-title">
-            <a className="title-link" href="https://meshplay.io/community">
+            <a className="title-link" href="https://meshplay.khulnasoft.com/community">
               Community
             </a>
           </h3>
@@ -107,7 +107,7 @@ const Footer = () => {
             {/* <li>
               <a
                 className="category-link"
-                href="https://meshplay.io/blog"
+                href="https://meshplay.khulnasoft.com/blog"
               >Blog
               </a>
             </li> */}

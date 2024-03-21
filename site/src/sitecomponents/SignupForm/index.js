@@ -263,7 +263,7 @@ The Meshplay Playground is connected to live Kubernetes cluster(s) and allows us
           </p>
           <p>
             If you have any questions in the meantime, please send an email to{' '}
-            <a href='mailto:learn@meshplay.io'>learn@meshplay.io</a>.
+            <a href='mailto:learn@meshplay.khulnasoft.com'>learn@meshplay.khulnasoft.com</a>.
           </p>
           <h3 className='white'>
             - Team <img src={MeshplayText} alt='Meshplay' />

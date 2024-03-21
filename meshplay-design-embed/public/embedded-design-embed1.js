@@ -1674,7 +1674,7 @@ const CreateToolBar = () => {
   const toolbar = document.createElement("div");
   toolbar.innerHTML = `
     <div class="toolbar ">
-        <a class="water-mark" href="https://meshplay.io" target="_blank">
+        <a class="water-mark" href="https://meshplay.khulnasoft.com" target="_blank">
           <span> Powered By </span>
           <span> 
 <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="1.9rem" viewBox="0 0 97 17" fill="none">
